@@ -3,157 +3,185 @@
 @import 'reset';
 
 .header {
+    &__top {
+    }
+    
+    .logo {
+    }
+    .logo__img {
+    }
+    .menu {
+        &__list {
+            &-item {
+            }
+            &-link {
+            }
+        }
+    }
+    &__buttons {
+    }
+    &__btn {
+    }
+
+    .promo {
+        &__info {
+            &-title {
+            }
+            &-descr {
+            }
+            &-btn {
+            }
+        }
+    
+        &__media {
+            &-img {
+            }
+        }
+    }
+
+    .contacts {
+        &__item {
+            &-img {
+            }
+            &-title {
+            }
+            &-text {
+            }
+        }
+    }
 }
-.container {
-}
-.header__top {
-}
-.logo {
-}
-.logo__img {
-}
-.menu {
-}
-.menu__list {
-}
-.menu__list-item {
-}
-.menu__list-link {
-}
-.header__buttons {
-}
-.header__btn {
-}
-.promo {
-}
-.promo__info {
-}
-.promo__info-title {
-}
-.promo__info-descr {
-}
-.promo__info-btn {
-}
-.promo__media {
-}
-.promo__media-img {
-}
-.contacts {
-}
-.contacts__item {
-}
-.contacts__item-img {
-}
-.contacts__item-title {
-}
-.contacts__item-text {
-}
+
+
+
+
 .about {
+    &__item {
+        &-title {
+        }
+        &-subtitle {
+        }
+        &-text {
+        }
+        &-media {
+        }
+        &-img {
+        }
+        &-info {
+        }
+        &-btn {
+        }
+    }
 }
-.about__item {
-}
-.about__item-title {
-}
-.about__item-subtitle {
-}
-.about__item-text {
-}
-.about__item-media {
-}
-.about__item-img {
-}
-.about__item-info {
-}
-.about__item-btn {
-}
+
+
 .purpose {
+    &__items {
+    }
+    &__item {
+        &-img {
+        }
+        &-title {
+        }
+        &-text {
+        }
+        &-btn {
+        }
+    }
 }
-.purpose__items {
-}
-.purpose__item {
-}
-.purpose__item-img {
-}
-.purpose__item-title {
-}
-.purpose__item-text {
-}
-.purpose__item-btn {
-}
+
+
 .technologies {
+    &__banner {
+        &-title {
+        }
+        &-subtitle {
+        }
+    }
+    
+    &__items {
+    }
+    &__item {
+        &-img {
+        }
+    }
 }
-.technologies__banner {
-}
-.technologies__banner-title {
-}
-.technologies__banner-subtitle {
-}
-.technologies__items {
-}
-.technologies__item {
-}
-.technologies__item-img {
-}
+
+
 .how {
+    &__title {
+    }
+    &__subtitle {
+    }
+    &__descr {
+    }
+    &__path {
+    }
+    &__item {
+        &-number {
+        }
+        &-descr {
+        }
+    }
 }
-.how__title {
-}
-.how__subtitle {
-}
-.how__descr {
-}
-.how__path {
-}
-.how__item {
-}
-.how__item-number {
-}
-.how__item-descr {
-}
+
+
+
 .join {
+    &__form {
+        &-title {
+        }
+        &-descr {
+        }
+        &-input {
+        }
+        &-textarea {
+        }
+    }
 }
-.join__form {
-}
-.join__form-title {
-}
-.join__form-descr {
-}
-.join__form-input {
-}
-.join__form-textarea {
-}
+
+
+
+
 .footer {
+    &__inner {
+    }
+    &__item {
+        &-btn {
+
+        }
+    }
+    &__menu {
+        &-list {
+        }
+        &-item {
+        }
+        &-link {
+        }
+        &-title {
+        }
+    }
+
+    .social {
+        &__list {
+            &-item {
+            }
+            &-link {
+            }
+            &-img {
+            }
+        }
+    }
+
+    &__policy {
+        &-text {
+        }
+    }
 }
-.footer__inner {
-}
-.footer__item {
-}
-.footer__menu {
-}
-.footer__menu-list {
-}
-.footer__menu-item {
-}
-.footer__menu-link {
-}
-.footer__item-title {
-}
-.social {
-}
-.social__list {
-}
-.social__list-item {
-}
-.social__list-link {
-}
-.social__list-img {
-}
-.footer__item-btn {
-}
-.footer__policy {
-}
-.footer__policy-text {
-}
+
+
+
+
+
 
 
 
