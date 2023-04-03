@@ -43,5 +43,19 @@ button{
     font-weight: 300;
     font-size: 36px;
     line-height: 44px;
+    &.arr {
+        position: relative;
+        padding-right: 244px;
+        &::after {
+            position: absolute;
+            content: '';
+            background-image: url(../images/subtitle-arr.svg);
+            width: 228px;
+            height: 95px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
 
 }

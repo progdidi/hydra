@@ -4,6 +4,7 @@
 
 .header {
     margin-bottom: 90px;
+    background-image: url(../images/promo-bg.svg);
     &__top {
         padding-top: 50px;
         display: flex;
@@ -19,17 +20,17 @@
     }
     .menu {
         &__list {
-            padding-top: 44px;
             display: flex;
             justify-content: space-between;
-            &-item {
+            align-items: center;
+            &-item + .menu__list-item{
+                margin-left: 41px;
             }
             &-link {
             }
         }
     }
     &__buttons {
-        padding-top: 29px;
         display: flex;
         justify-content: space-between;
     }
@@ -47,6 +48,15 @@
             max-width: 456px;
             margin-top: 36px;
             &-title {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 49px;
+                margin-bottom: 36px;
+                span {
+                    background: $purple-gradient;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
             }
             &-descr {
                 font-size: 16px;
@@ -54,6 +64,7 @@
                 margin-bottom: 66px;
             }
             &-btn {
+                padding: 17px 38px;
                 @include purple-btn;
             }
         }
@@ -70,14 +81,49 @@
         background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
         box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
         border-radius: 90px;
-        padding: 49px 39px;
+        padding: 28px 39px 28px 0;
         &__item {
+            border-right: 1px solid rgba(192, 183, 232, 0.33);
+            padding-left: 138px;
+            padding-top: 28px;
+            padding-bottom: 20px;
+            position: relative;
+            padding-right: 43px;
+            &:first-child {
+                padding-left: 109px;
+            }
+            &::before {
+                position: absolute;
+                left: 48px;
+                width: 70px;
+                height: 70px;
+                top: 50%;
+                transform: translateY(-50%);
+                content: '';
+                background-repeat: no-repeat;
+                background-position: center center;
+                
+            }
+            &.location::before {
+                background-image: url(../images/contacts/location.svg);
+            }
+            &.phone::before {
+                background-image: url(../images/contacts/phone.svg);
+            }
+            &.mail::before {
+                background-image: url(../images/contacts/mail.svg);
+            }
+            &:last-child {
+                border-right: none;
+            }
             &-img {
             }
             &-title {
                 margin-bottom: 10px;
             }
             &-text {
+                font-size: 14px;
+                line-height: 17px;
             }
         }
     }
@@ -87,6 +133,9 @@
 
 
 .about {
+    background-image: url(../images/about-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
     &__item {
         display: flex;
         justify-content: space-between;
@@ -118,6 +167,8 @@
             max-width: 630px;
         }
         &-btn {
+            @include purple-btn;
+            padding: 17px 40px;
         }
     }
 }
@@ -211,17 +262,22 @@
     &__path {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        background-image: url(../images/how-bg.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
     }
     &__item {
         display: flex;
         flex-direction: column;
-        max-width: 200px;
+        max-width: 254px;
         justify-content: center;
+        align-items: center;
         &-number {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 41px;
+            padding: 41px 41px 40px 37px;
             background: $purple-gradient;
             font-weight: 700;
             font-size: 64px;
@@ -231,10 +287,26 @@
             width: 198px;
             height: 198px;
             margin-bottom: 25px;
+            border: 15px solid rgba(13, 13, 13, 0.32);
 
         }
         &-descr {
-            padding-left: 63px;
+            padding-left: 47px;
+            position: relative;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 33px;
+                height: 23px;
+                left: 0;
+                top: 0;
+                background-image: url(../images/how-arrow.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
         }
     }
 }
