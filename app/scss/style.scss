@@ -29,7 +29,24 @@
             &-link {
             }
         }
+        &__btn {
+            width: 40px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            display: none;
+            span {
+                height: 4px;
+                width: 100%;
+                background-color: #fff;
+            }
+        }
     }
+
     &__buttons {
         display: flex;
         justify-content: space-between;
@@ -129,9 +146,6 @@
     }
 }
 
-
-
-
 .about {
     background-image: url(../images/about-bg.svg);
     background-repeat: no-repeat;
@@ -172,7 +186,6 @@
         }
     }
 }
-
 
 .purpose {
     background-image: url(../images/purpose-bg.svg);
@@ -233,7 +246,6 @@
     }
 }
 
-
 .technologies {
     margin-bottom: 80px;
     &__banner {
@@ -280,7 +292,6 @@
         }
     }
 }
-
 
 .how {
     margin-bottom: 112px;
@@ -358,7 +369,6 @@
 }
 
 
-
 .join {
     margin-bottom: 123px;
     &__form {
@@ -401,20 +411,42 @@
             border-radius: 40px;
             background-color: transparent;
             padding: 27px 42px;
+            &::placeholder {
+                font-size: 14px;
+                line-height: 17px;
+                color: #fff;
+            }
         }
     }
 }
 
 
-
-
 .footer {
+    
     &__inner {
         display: flex;
         justify-content: space-between;
         padding-bottom: 81px;
+        background-image: url(../images/footer-bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
     }
     &__item {
+        position: relative;
+        padding-right: 70px;
+        &::after {
+            position: absolute;
+            content: '';
+            right: 0;
+            background-image: url(../images/footer-boder.svg);
+            top: 5px;
+            bottom: 5px;
+            width: 4px;
+        }
+        &:last-child::after {
+            background-image: none;
+        }
         &-btn {
 
         }
@@ -458,6 +490,8 @@
         }
     }
 }
+
+@import 'media';
 
 
 
