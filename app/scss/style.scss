@@ -5,6 +5,7 @@
 .header {
     margin-bottom: 90px;
     background-image: url(../images/promo-bg.svg);
+    min-height: 100vh;
     &__top {
         padding-top: 50px;
         display: flex;
@@ -59,6 +60,7 @@
     .promo {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-bottom: 103px;
         &__info {
             padding-top: 22px;
